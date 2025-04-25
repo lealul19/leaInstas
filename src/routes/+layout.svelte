@@ -17,8 +17,8 @@
            <!-- Main navigation links -->
         <nav class="flex flex-wrap justify-center gap-6 text-sm font-medium">
           <a href="/" class="hover:underline">Home</a>
-          <a href="/upload" class="hover:underline">Upload</a>
-          <a href="/top" class="hover:underline">Top Bilder</a>
+          <a href="/admin/articles_management" class="hover:underline">Articles_Mangement</a>
+          <a href="/admin/articles_management/upload" class="hover:underline">Upload</a>
         </nav>
 		        <!-- Login and Register buttons -->
         <div class="flex gap-3">
