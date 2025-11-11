@@ -1,6 +1,8 @@
 import { createConnection } from '$lib/db/mysql';
 import bcrypt from 'bcrypt';
 
+// Handles user login by checking email and hashed password, then generating a session token
+
 export let login = async (email, password) => {
   let connection = await createConnection();
 

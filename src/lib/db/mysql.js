@@ -1,7 +1,7 @@
 import mysql from 'mysql2/promise';
 import { DB_HOST, DB_USER, DB_PASSWORD, DB_NAME, DB_PORT } from '$env/static/private';
  
-let connection = null;
+let connection = null;  // Store the MySQL connection globally to reuse it
  
 export async function createConnection() {
   if (!connection) {
@@ -13,5 +13,7 @@ export async function createConnection() {
       port: DB_PORT 
     });
   }
+  // Return the existing or newly created connection
+
   return connection;
 }

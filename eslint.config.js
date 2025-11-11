@@ -1,26 +1,26 @@
-import prettier from 'eslint-config-prettier';
+import prettier from 'eslint-config-prettier'; // Disables ESLint rules that might conflict with Prettier formatting
 import js from '@eslint/js';
-import { includeIgnoreFile } from '@eslint/compat';
-import svelte from 'eslint-plugin-svelte';
-import globals from 'globals';
-import { fileURLToPath } from 'node:url';
-import svelteConfig from './svelte.config.js';
+import { includeIgnoreFile } from '@eslint/compat'; // Helps ESLint respect .gitignore file entries
+import svelte from 'eslint-plugin-svelte'; // ESLint plugin for linting Svelte files
+import globals from 'globals'; // Provides predefined global variables (e.g., browser, node)
+import { fileURLToPath } from 'node:url'; // Converts file URLs to file paths
+import svelteConfig from './svelte.config.js'; // Imports your SvelteKit configuration for parsing Svelte files
 
-const gitignorePath = fileURLToPath(new URL('./.gitignore', import.meta.url));
+const gitignorePath = fileURLToPath(new URL('./.gitignore', import.meta.url)); // Converts .gitignore URL to a usable file path
 
 export default [
-	includeIgnoreFile(gitignorePath),
+	includeIgnoreFile(gitignorePath), // Tells ESLint to ignore files listed in .gitignore
 	js.configs.recommended,
 	...svelte.configs.recommended,
 	prettier,
 	...svelte.configs.prettier,
 	{
 		languageOptions: {
-			globals: { ...globals.browser, ...globals.node }
+			globals: { ...globals.browser, ...globals.node } // Defines both browser and Node.js global variables
 		}
 	},
 	{
-		files: ['**/*.svelte', '**/*.svelte.js'],
-		languageOptions: { parserOptions: { svelteConfig } }
+		files: ['**/*.svelte', '**/*.svelte.js'], // Target only Svelte files for the config below
+		languageOptions: { parserOptions: { svelteConfig } } // Use your Svelte config when parsing these files
 	}
 ];
