@@ -1,0 +1,24 @@
+{
+	"page_title": "Mirësevini në Insta-Clone tim",
+	"by_author": "nga {author}",
+	"upvotes_label": "Pëlqime: {votes}",
+	"upvote_btn": "Pëlqeje",
+	"comments_title": "Komente:",
+	"no_comments": "Nuk ka komente ende.",
+	"comment_name_placeholder": "Emri yt",
+	"comment_text_placeholder": "Komenti yt",
+	"comment_submit_btn": "Komento",
+
+	"nav_home": "Faqja kryesore",
+	"nav_articles": "Menaxhimi i artikujve",
+	"nav_upload": "Ngarko",
+	"btn_login": "Hyrje",
+	"btn_register": "Regjistrohu",
+
+	"footer_desc": "Platforma jote kreative për ndarjen dhe vlerësimin e fotove.",
+	"footer_nav": "Navigimi",
+	"footer_upload": "Ngarko foto",
+	"footer_top": "Fotot më të mira",
+	"footer_follow": "Na ndiq",
+	"footer_copy": "Bërë me dashuri."
+}

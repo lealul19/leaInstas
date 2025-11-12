@@ -1,0 +1,24 @@
+{
+	"page_title": "Willkommen zu meinem Insta-Clone",
+	"by_author": "von {author}",
+	"upvotes_label": "Upvotes: {votes}",
+	"upvote_btn": "Hochstimmen",
+	"comments_title": "Kommentare:",
+	"no_comments": "Noch keine Kommentare vorhanden.",
+	"comment_name_placeholder": "Dein Name",
+	"comment_text_placeholder": "Dein Kommentar",
+	"comment_submit_btn": "Kommentieren",
+
+	"nav_home": "Startseite",
+	"nav_articles": "Artikelverwaltung",
+	"nav_upload": "Hochladen",
+	"btn_login": "Login",
+	"btn_register": "Registrieren",
+
+	"footer_desc": "Deine kreative Plattform für das Teilen und Bewerten von Bildern.",
+	"footer_nav": "Navigation",
+	"footer_upload": "Bild hochladen",
+	"footer_top": "Top Bilder",
+	"footer_follow": "Folge uns",
+	"footer_copy": "Mit Liebe gemacht."
+}
